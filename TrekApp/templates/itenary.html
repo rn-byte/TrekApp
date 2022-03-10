@@ -1,0 +1,52 @@
+<style type="text/css">
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    tr:nth-child(even) {
+        background-color: lightgrey;
+    }
+
+    th {
+        background-color: skyblue;
+    }
+
+    #itenaries-table {
+        margin-left: 250px;
+        margin-top: 50px;
+    }
+</style>
+<div id="itenaries-table">
+    {% if result['iternaries'] %}
+    <table>
+        <tr>
+            <th>Days</th>
+            <th>Title</th>
+            <th>Route</th>
+            <th>Description</th>
+            <th>Duration</th>
+            <th>Cost</th>
+        </tr>
+        {% for row in result['iternaries'] %}
+        <tr>
+            <td>{{row.2}}</td>
+            <td>{{row.1}}</td>
+            <td>{{row.3}} - {{row.4}}</td>
+            <td>{{row.5}}</td>
+            <td>{{row.6}}</td>
+            <td>{{row.7}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <h3>No Data Found</h3>
+    {% endif %}
+</div>

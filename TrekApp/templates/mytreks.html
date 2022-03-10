@@ -1,0 +1,20 @@
+{%for row in result["treks"]%}
+<div class="product">
+    <div class="product-img">
+        <img src="https://placeimg.com/400/650/animals">
+    </div>
+    <div class="product-content">
+        <h3>
+            <a href="/trek/{{row.0}}"> {{ row.1 }} - {{ row.3 }}</a>
+            <small>Total Days: {{ row.2 }}</small>
+        </h3>
+        <p class="product-text price">Rs. {{ row.4 }}</p>
+        <p class="product-text genre">{{ row.6 }}</p>
+        <p class="product-text genre">Upvotes: {{ row.5 }}</p>
+        {% if result["userId"]==row.6 %}
+        <a href="/editTrek/{{row.0}}">Edit</a>
+        <a onclick="return confirm('Are you sure You want to delete this?')" href="/doDeleteTrek/{{row.0}}">Delete</a>
+        {% endif %}
+    </div>
+</div>
+{% endfor %}

@@ -1,0 +1,412 @@
+{
+	"info": {
+		"_postman_id": "dd5b9fa5-6b1a-446e-8ba1-3c5bb6090096",
+		"name": "TrekApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Rest",
+			"item": [
+				{
+					"name": "/rest/treks",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/rest/treks",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"rest",
+								"treks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/rest/treks",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Jumla Trek\",\r\n    \"days\":\"7\",\r\n    \"difficulty\":\"Level 5\",\r\n    \"total_cost\":4500,\r\n    \"token\":\"3645823b-0f80-42d2-b9ab-c65def3741c0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/rest/treks",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"rest",
+								"treks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/rest/treks",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"trekId\":11,\r\n    \"title\":\"Humla D Trek\",\r\n    \"days\":\"5\",\r\n    \"difficulty\":\"Level 3\",\r\n    \"total_cost\":6000,\r\n    \"token\":\"3645823b-0f80-42d2-b9ab-c65def3741c0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/rest/treks",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"rest",
+								"treks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/rest/treks",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"trekId\":11,\r\n    \"token\":\"3645823b-0f80-42d2-b9ab-c65def3741c0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/rest/treks",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"rest",
+								"treks"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "getTreks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/treks",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"treks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/doRegister",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"full_name\":\"Sumit Maharjan\",\r\n\t\"email\":\"sumit@gmail.com\",\r\n\t\"phone_number\":\"9814898806\",\r\n\t\"address\":\"Dhobhighat\",\r\n\t\"psw\":\"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/doRegister",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"doRegister"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/treks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/treks",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"treks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/doLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"salim@gmail.com\",\r\n    \"psw\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/doLogin",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"doLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/doAddTrek",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Lukla Trek\",\r\n    \"days\":\"5\",\r\n    \"difficulty\":\"Level 3\",\r\n    \"total_cost\":3500,\r\n    \"token\":\"3645823b-0f80-42d2-b9ab-c65def3741c0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/doAddTrek",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"doAddTrek"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/doRegister",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"full_name\":\"Sumit Maharjan\",\r\n\t\"email\":\"sumit@gmail.com\",\r\n\t\"phone_number\":\"9814898806\",\r\n\t\"address\":\"Dhobhighat\",\r\n\t\"psw\":\"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/doRegister",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"doRegister"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/doUpdateTrek",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"trekId\":3,\r\n    \"title\":\"Makalu Trek\",\r\n    \"days\":\"5\",\r\n    \"difficulty\":\"Level 3\",\r\n    \"total_cost\":6000,\r\n    \"token\":\"3645823b-0f80-42d2-b9ab-c65def3741c0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/doUpdateTrek",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"doUpdateTrek"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/doDeleteTrek",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"trekId\":1,\r\n    \"token\":\"3645823b-0f80-42d2-b9ab-c65def3741c0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/doDeleteTrek",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"doDeleteTrek"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/treks/search?keyword=trek",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/treks/search?keyword=trek",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"treks",
+						"search"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "trek"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
